@@ -1,0 +1,148 @@
+/* Root container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6; /* light gray */
+}
+
+/* Logo styles (keep from template) */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Spin animation */
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card container */
+.card {
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Form inputs */
+input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, transform 0.2s;
+  border: none;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button.add {
+  background-color: #3b82f6;
+  color: white;
+}
+
+button.add:hover {
+  background-color: #2563eb;
+}
+
+button.edit {
+  background-color: #fbbf24;
+  color: white;
+}
+
+button.edit:hover {
+  background-color: #f59e0b;
+}
+
+button.delete {
+  background-color: #ef4444;
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #dc2626;
+}
+
+/* Car list item */
+.car-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.car-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+/* Typography */
+h1, h2 {
+  color: #111827;
+}
+
+p {
+  color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .car-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .car-item div {
+    margin-bottom: 0.5rem;
+  }
+}
